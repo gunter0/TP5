@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+        *** GENERATED FROM jax-ws.xml - DO NOT EDIT !                             ***
+        *** TO MODIFY wsimport options USE Web Service node -> Edit WS Attributes ***
+        *** TO CHANGE TARGETS GENERATED TO jaxws-build.xml COPY THOSE             ***
+        *** TARGETS TO ../build.xml AND MODIFY THAT FILE INSTEAD                  ***
+
+        --><project xmlns:xalan="http://xml.apache.org/xslt" xmlns:j2seproject3="http://www.netbeans.org/ns/j2se-project/3" xmlns:jaxws="http://www.netbeans.org/ns/jax-ws/1">
+    <!--
+                ===================
+                JAX-WS WSIMPORT SECTION
+                ===================
+            -->
+    <target name="wsimport-init" depends="init">
+        <mkdir dir="${build.generated.sources.dir}/jax-ws"/>
+        <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+            <classpath path="${libs.jaxws21.classpath}"/>
+        </taskdef>
+    </target>
+    <target name="wsimport-client-AuthorizationService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/AuthorizationService"/>
+        <property name="wsdl-AuthorizationService" location="xml-resources/web-service-references/AuthorizationService/wsdl/ds.dyndns.org_9000/AuthorizationService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/AuthorizationService" destdir="${build.generated.dir}/jax-wsCache/AuthorizationService" wsdl="${wsdl-AuthorizationService}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://ds.dyndns.org:9000/AuthorizationService?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-AuthorizationService}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/AuthorizationService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/AuthorizationService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-AuthorizationService" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/AuthorizationService"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/org/tempuri"/>
+    </target>
+    <target name="wsimport-client-AFIP" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/AFIP"/>
+        <property name="wsdl-AFIP" location="xml-resources/web-service-references/AFIP/wsdl/AFIP.xml.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/AFIP" destdir="${build.generated.dir}/jax-wsCache/AFIP" wsdl="${wsdl-AFIP}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="file:/C:/Users/Fernanda%20Ponce/Desktop/AFIP.xml" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-AFIP}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/AFIP"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/AFIP">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-AFIP" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/AFIP"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/fev1/dif/afip/gov/ar"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-AuthorizationService, wsimport-client-AFIP"/>
+</project>

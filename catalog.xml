@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://ds.dyndns.org:9000/AuthorizationService?wsdl" uri="xml-resources/web-service-references/AuthorizationService/wsdl/ds.dyndns.org_9000/AuthorizationService.wsdl"/>
+    <system systemId="http://ds.dyndns.org:9000/AuthorizationService?wsdl=wsdl0" uri="xml-resources/web-service-references/AuthorizationService/wsdl/ds.dyndns.org_9000/AuthorizationService.wsdl_wsdl0.wsdl"/>
+    <system systemId="http://ds.dyndns.org:9000/AuthorizationService?xsd=xsd0" uri="xml-resources/web-service-references/AuthorizationService/wsdl/ds.dyndns.org_9000/AuthorizationService.xsd_xsd0.xsd"/>
+    <system systemId="http://ds.dyndns.org:9000/AuthorizationService?xsd=xsd1" uri="xml-resources/web-service-references/AuthorizationService/wsdl/ds.dyndns.org_9000/AuthorizationService.xsd_xsd1.xsd"/>
+    <system systemId="http://ds.dyndns.org:9000/AuthorizationService?xsd=xsd2" uri="xml-resources/web-service-references/AuthorizationService/wsdl/ds.dyndns.org_9000/AuthorizationService.xsd_xsd2.xsd"/>
+    <system systemId="file:/C:/Users/Fernanda%20Ponce/Desktop/AFIP.xml" uri="xml-resources/web-service-references/AFIP/wsdl/AFIP.xml.wsdl"/>
+</catalog>
